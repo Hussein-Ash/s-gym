@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "publish/**/*.dll",
+        "use": "@vercel/dotnet"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/:collectionName",
+        "dest": "/api/:collectionName"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+}
