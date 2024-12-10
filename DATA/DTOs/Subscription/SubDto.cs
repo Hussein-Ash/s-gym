@@ -12,6 +12,7 @@ public class SubDto : BaseDto<Guid>
     public string? Status { get; set; }
     public string? PlayerPhoto { get; set; }
     public string? PhoneNumber { get; set; }
+    public DateTime? ResgisterDate { get; set; }
     public SubInfoDto? SubInfo { get; set; }
 
 
