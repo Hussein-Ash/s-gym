@@ -1,4 +1,4 @@
-name: Deploy Sadid Backend UAT Service
+name: Deploy Gyms Backend UAT Service
 on:
   push:
     branches:
