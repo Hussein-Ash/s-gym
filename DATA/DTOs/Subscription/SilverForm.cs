@@ -13,7 +13,6 @@ public class SilverForm
     public required string GymName { get; set; }
     public string? Name { get; set; }
     public required string GymAddress { get; set; }
-    public DateTime Expire { get; set; }
 
 
 
