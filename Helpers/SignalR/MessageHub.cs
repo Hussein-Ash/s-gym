@@ -119,9 +119,6 @@ namespace API.SignalR
             if (connection != null)
             {
                 await _messageService.RemoveConnection(connection);
-//                 _context.Connections.Remove(connection)
-// ;
-//                 await _context.SaveChangesAsync();
             }
         }
 
