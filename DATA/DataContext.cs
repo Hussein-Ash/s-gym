@@ -126,6 +126,12 @@ namespace EvaluationBackend.DATA
                 .WithMany(x => x.NotificationsSent)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            modelBuilder.Entity<Course>()
+                .HasMany(s => s.Days)
+                .WithOne(sub => sub.CourseName)
+                .HasForeignKey(sub => sub.CourseId)
+                .OnDelete(DeleteBehavior.SetNull);
+
 
             modelBuilder.Entity<AppUser>().HasData(u);
             modelBuilder.Entity<AppUser>().HasData(y);
